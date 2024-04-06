@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maize Leaf Disease Detection</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Maize Leaf Disease Detection Using CNN</h1>
+  <div class="container">
+    <div class="index">
+      <form method="POST" action="/predict" enctype="multipart/form-data">
+        <input type="file" name="image" accept=".jpg, .jpeg, .png" class="upload" />
+        <button type="submit">Predict Disease</button>
+      </form>
+    </div>
+    <!-- results -->
+    <div class="result">
+      {% if result %}
+      <img src="{{ url_for('uploaded_file', filename=result['image']) }}" alt="Uploaded Image"/>
+      <div class="output">
+        <p>The uploaded image shows <strong>{{ result['disease'] }}</strong>.</p>
+        <p>Here is some information:</p>
+        <strong>Course:</strong> <p>{{ result['course'] }}</p>
+        <strong>Control Measures:</strong> <p>{{ result['control_measure'] }}</p>
+      </div>
+      {% endif %}
+    </div>
+  </div> <!--  end of container     -->
+</body>
+</html>

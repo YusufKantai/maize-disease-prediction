@@ -1,0 +1,132 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-image: url(/static/bg-corn.jpg);
+  height: 100vh;
+  overflow: hidden;
+  background-position:center top;
+}
+
+body h1{
+  text-align: center; 
+  padding-top: 30px;
+   font-size: 3rem;
+   color:rgb(119, 251, 4);
+   font-family: sans-serif;
+   font-weight: 100;
+}
+
+.index{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 90%;
+  text-align: center; 
+}
+
+.details h2 {
+  position: relative;
+  top: 100px;
+  margin: auto;
+  color: rgb(18, 231, 231);
+  font-size: 3rem;
+}
+
+label:hover {
+  transform: scale(1.03);
+}
+
+.details h2 { 
+  position: relative;
+  top: 100px;
+  margin: auto;
+  color: rgb(18, 231, 231);
+  font-size: 3rem;
+}
+
+.details h1 {
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(8, 8, 8);
+}
+
+.upload {
+  font-size: 20px;
+  background-color: rgb(255, 252, 252);
+  border-radius: 20px;
+  outline: none; 
+  color: rgb(0, 0, 0);
+  border: 1px solid orangered;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+::-webkit-file-upload-button {
+  color: #fff;
+  padding: 15px; 
+  border-radius: 10px; 
+  border: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
+  background-color: rgb(57, 254, 74);
+  outline: none;
+ 
+}
+
+button {
+  font-size: 20px;
+  background-color:rgb(205, 253, 15);
+  border-radius: 20px;
+  padding: 15px;
+  outline: none; 
+  color: rgb(0, 0, 0);
+  border: 1px solid orangered;
+  border-top-left-radius: 0px;
+  cursor: pointer;
+  border-bottom-left-radius: 0px;
+  
+
+}
+.result{
+  display: flex;
+  justify-content:center; 
+  background-color: #b2fc5e9e;
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+.result img{
+  width: 300px;
+  height: 40vh;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.output p{
+  font-size: 20px;
+  line-height: 40px;
+  font-family: sans-serif;
+}
+.output strong{
+  font-size: 24px;
+  color: rgb(253, 255, 253);
+}
